@@ -9,7 +9,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='overflow-hidden'>
+    <div className='overflow-x-clip'>
       <Hero />
       <Laptop />
       <BuildAndLaunch />

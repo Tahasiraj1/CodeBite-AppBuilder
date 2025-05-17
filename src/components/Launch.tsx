@@ -1,12 +1,19 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { GradientBlob } from "./ui/GradientBlob";
 
 const Launch = () => {
   return (
-    <div className="relative w-full py-10 h-full">
+    <div className="relative w-full py-10 mb-20 h-screen">
+      <GradientBlob
+        colors={["#701A75"]}
+        className="absolute bottom-0 -left-20 -z-10"
+        opacity={30}
+        blur={200}
+      />
       <svg
-        className="absolute inset-0 w-auto h-auto pt-20"
+        className="absolute inset-0 w-auto h-auto pt-20 pb-20"
         width="1440"
         height="729"
         viewBox="0 0 1440 729"
@@ -481,7 +488,7 @@ const Launch = () => {
           alt="iphone Mockup"
           className="z-10"
         />
-        <div className="flex flex-col justify-center max-w-md items-start lg:gap-4 pl-10 space-y-6 lg:space-y-0 w-full">
+        <div className="flex flex-col justify-center max-w-md items-start lg:gap-4 pl-10 space-y-6 lg:space-y-0 w-full mt-10">
           <h1 className="text-3xl font-bold">Launch your app today</h1>
           <p className="max-w-md">
             Stay on top of your competition with a great performing app. Your

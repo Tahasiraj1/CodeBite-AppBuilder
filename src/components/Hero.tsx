@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:justify-between gap-10 pt-20 w-full h-auto overflow-hidden">
+    <div className="flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:justify-between gap-10 pt-20 w-full h-auto">
       <div className="flex flex-1 flex-col justify-center items-start pl-10 lg:gap-4 space-y-6 lg:space-y-0 w-full">
         <h1 className="text-8xl font-bold">App Builder</h1>
         <h2 className="text-4xl font-bold">For iOS & Android</h2>

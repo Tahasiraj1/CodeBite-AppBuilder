@@ -2,10 +2,17 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
 import { FaRegCirclePlay } from "react-icons/fa6";
+import { GradientBlob } from "./ui/GradientBlob";
 
 const BuildAndLaunch = () => {
   return (
-    <div className="relative flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:justify-between gap-10 pt-20 w-full h-auto overflow-hidden">
+    <div className="relative flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:justify-between gap-10 pt-20 w-full h-auto overflow-x-clip">
+        <GradientBlob 
+        colors={['#701A75']} 
+        className="absolute bottom-0 -right-20 -z-10"
+        opacity={30} 
+        blur={200} 
+        />
       <div className="relative flex flex-1 items-center justify-center z-10">
         {/* Mobile UI */}
         <Image

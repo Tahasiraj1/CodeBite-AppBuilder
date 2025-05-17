@@ -1,15 +1,22 @@
 import Image from "next/image";
 import React from "react";
+import { GradientBlob } from "./ui/GradientBlob";
 
 const Laptop = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center w-full h-full overflow-hidden">
+    <div className="relative flex flex-col items-center justify-center w-full h-full overflow-x-clip">
       <Image
         src="/images/Macbook.png"
         width={1000}
         height={550}
         alt="iphone Mockup"
         className="z-10 absolute inset-0 translate-x-36 translate-y-[40%]"
+      />
+      <GradientBlob
+        colors={["#FACC15"]}
+        className="absolute top-40 -left-20 -z-10 overflow-visible"
+        opacity={30}
+        blur={200}
       />
       {/* Stripes */}
       <svg
