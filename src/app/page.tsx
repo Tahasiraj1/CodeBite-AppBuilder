@@ -4,6 +4,7 @@ import Laptop from '@/components/Laptop'
 import Launch from '@/components/Launch'
 import Other1 from '@/components/Other1'
 import Other2 from '@/components/Other2'
+import Other3 from '@/components/Other3'
 import Partners from '@/components/Partners'
 import React from 'react'
 
@@ -16,6 +17,7 @@ const page = () => {
       <Partners />
       <Other1 />
       <Other2 />
+      <Other3 />
       <Launch />
     </div>
   )

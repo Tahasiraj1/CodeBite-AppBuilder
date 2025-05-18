@@ -3,25 +3,18 @@ import Image from "next/image";
 
 const Other2 = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center lg:justify-between w-full pt-20 pb-10 px-10 bg-[#F1F5F9] text-black">
+    <div className="flex flex-col lg:flex-row items-center lg:justify-between w-full py-10 px-10 bg-[#F1F5F9] text-black">
       <div className="relative flex w-full lg:pt-10 lg:mt-10">
         <div className="relative flex flex-1 items-center justify-center z-10">
           {/* Mobile UI */}
           <Image
-            src="/images/iphone.png"
-            width={300}
-            height={600}
+            src="/images/Col1.png"
+            width={516}
+            height={575}
             alt="iphone Mockup"
-            className="z-10"
+            className="z-10 sm:w-auto sm:h-auto"
           />
         </div>
-        <Image
-          src="/images/Picture4.png"
-          width={300}
-          height={600}
-          alt="iphone Mockup"
-          className="absolute top-0 left-0 sm:top-42 sm:left-10 mt-10 lg:mt-0 z-10 w-auto h-auto"
-        />
       </div>
 
       <div className="flex flex-col items-center lg:items-start space-y-12 w-full">
